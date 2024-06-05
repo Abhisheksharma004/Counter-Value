@@ -12,13 +12,18 @@ function App() {
     console.log("value Add", counter)
     setCounter(counter + 1)
   }
+  const removeValue = ()=>{
+    console.log("value remove", counter)
+    setCounter(counter - 1)
+  }
 
   return (
     <>
-      <h1>Counter Value : {counter}</h1>
+    <h1>Counter Value Increse Decrese</h1>
+      <h2>Counter Value : {counter}</h2>
       <button onClick={addValue}>Add Value</button>
       <br /><br />
-      <button>Remove Value</button>
+      <button onClick={removeValue}>Remove Value</button>
     </>
   )
 }
